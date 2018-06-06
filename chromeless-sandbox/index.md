@@ -5,7 +5,13 @@ ms.author: jeahyoun
 ---
 # Welcome to the Chromeless Sandbox
 
+## Persistent Content
+
+This content should show up regardless of the context
+
 ::: zone render="docs"
+
+## Docs Content
 
 This content should only be visible in the docs context.
 
@@ -14,6 +20,8 @@ This content should only be visible in the docs context.
 ::: zone-end
 
 ::: zone render="chromeless"
+
+## Chromeless Content
 
 This content should only be visible in a chromeless context.
 
