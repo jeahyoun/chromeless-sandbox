@@ -1,0 +1,31 @@
+<html>
+<head>
+
+    <title>IFrame test</title>
+
+</head>
+<body>
+
+<iframe id="inner" src="./chromeless-forms" style="display: block; height: 500px; width: 90%; border: 5px solid black; margin: 0 auto;"></iframe>
+
+<script type="text/javascript">
+window.addEventListener('message', function (event) {
+    if (event.data && event.data.id) {
+        console.log("received message in parent frame event", event);
+        document.getElementById('inner').contentWindow.postMessage({
+            id: event.data.id,
+            type: 'Forms',
+            payload: {
+                formId: event.data.payload.formId, // The ID of the form in question, as there may be multiple forms on a page.
+                success: true,
+                responseText: 'Your form was submitted successfully.'
+            }
+        }, '*');
+    } else {
+        console.log("received message in parent frame, but it is not a docs event", event);
+    }
+});
+</script>
+
+</body>
+</html>

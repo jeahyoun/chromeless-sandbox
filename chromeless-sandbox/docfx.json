@@ -20,7 +20,9 @@
           "**/*.png",
           "**/*.svg",
           "**/*.jpg",
-          "**/breadcrumb.json"
+          "**/breadcrumb.json",
+          "**/*.form.json",
+          "**/*.iframe.html"
         ],
         "exclude": [
           "**/obj/**",
