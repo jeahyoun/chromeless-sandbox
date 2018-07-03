@@ -9,7 +9,7 @@ ms.author: jeahyoun
 
 This content should show up regardless of the context
 
-::: zone render="docs"
+::: zone target="docs"
 
 ## Docs Content
 
@@ -19,7 +19,7 @@ This content should only be visible in the docs context.
 
 ::: zone-end
 
-::: zone render="chromeless"
+::: zone target="chromeless"
 
 ## Chromeless Content
 
