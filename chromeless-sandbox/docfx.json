@@ -21,7 +21,6 @@
           "**/*.svg",
           "**/*.jpg",
           "**/breadcrumb.json",
-          "**/*.form.json",
           "**/*.iframe.html"
         ],
         "exclude": [

@@ -1,0 +1,22 @@
+### YamlMime:FormModel
+inputs:
+- type: text
+  name: resource-name
+  label: Resource Name
+  description: Resource Name
+  isRequired: true
+- type: "text"
+  name: "resource-group"
+  label: "Resource Group"
+  description: "Resource Group."
+  isRequired: true
+- type: "number"
+  name: "number-instances"
+  label: "Number of instances"
+  description: "Number of instances."
+  isRequired: true
+- type: "checkbox"
+  name: "auto-provision"
+  label: "Auto provision"
+  description: "Auto provision."
+  isRequired: false
